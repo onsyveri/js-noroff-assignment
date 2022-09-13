@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+
+    <title>Komputer Store</title>
+</head>
+
+<nav>
+    <h1>Komputer Store</h1>
+</nav>
+
+<body>
+
+    <section id="functionArea">
+        <article>
+            <h1>Joe Banker</h1>
+            <p id="balanceInfo">Balance &emsp;&emsp;&emsp;&emsp;&emsp; 0 Kr.</p>
+            <p id="loanInfo"></p>
+            <button type="button" class="btn btn-success" data-bs-toggle="modal" data-bs-target="#loanModal">Get a loan</button>
+            <!-- Modal -->
+            <div class="modal fade" id="loanModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Get a loan</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <label for="message-text" class="col-form-label">Enter desired loan below:</label>
+                        <div class="input-group">
+                            <input id="enteredLoan" type="number" class="form-control" aria-label="Dollar amount (with dot and two decimal places)">
+                            <span class="input-group-text">Kr.</span>
+                        </div>
+                        <p id="loanError"></p>
+                    </div>
+                    <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                    <button id="submitLoan" type="button" class="btn btn-primary">Submit loan</button>
+                    </div>
+                </div>
+                </div>
+            </div>
+        </article>
+
+        <article>
+            <h1>Work</h1>
+            <p id="workInfo">Pay &emsp;&emsp;&emsp;&emsp;&emsp; 0 Kr.</p>
+            <button id="payLoan" type="button" class="btn btn-primary">Pay loan</button>
+            <div id="work-buttons" class="d-grid gap-2 d-md-block">
+                <button id="bank" type="button" class="btn btn-warning">Bank</button>
+                <button id="work" type="button" class="btn btn-danger">Work</button>
+            </div>
+        </article>
+
+        <article>
+            <h1>Laptops</h1>
+            <div class="dropdown">
+                <button id="ddLaptop" class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Choose laptop
+                </button>
+                <ul id="ddMenu" class="dropdown-menu dropdown-menu-dark"></ul>
+            </div>
+            <h2>Features</h2>
+            <p id="output"></p>
+        </article>
+    </section>
+
+    <section id="infoArea">
+        <img id="compImg" src="#" alt="Laptop" onerror="this.src='https://thumbs.dreamstime.com/z/error-kitten-page-not-found-concept-broken-dead-link-symbol-as-cat-emerging-hole-holding-sign-text-breaking-100615614.jpg';" />
+        <div id="compInfo">
+            <h1 id="compTitle"></h1>
+            <p id="compDesc"></p>
+            <div id="holderAlert"></div>
+        </div>
+
+        <div id="compBuy">
+            <p id="compPrice"></p>
+            <button id="compBuyBtn" type="button" class="btn btn-info">Buy now</button>
+        </div>
+    </section>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8" crossorigin="anonymous"></script>
+    <script src="script.js"></script>
+
+</body>
+</html>

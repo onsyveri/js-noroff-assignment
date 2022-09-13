@@ -1,0 +1,194 @@
+body {
+    background-color: #282828;
+    width: 100%;
+    margin: auto;
+    margin-top: 40px;
+    font-family: sans-serif;
+    text-align: center;
+}
+
+
+/* NAV --------------------------------------------------------- */
+
+nav {
+    margin-bottom: 40px;
+    border-bottom: 5px solid #424242;
+}
+
+nav h1 {
+    text-align: left;
+    padding-bottom: 10px;
+    margin: 0 auto;
+    width: 90%;
+}
+
+
+/* Text related --------------------------------------------------------- */
+
+h1 {
+    margin: 0 auto;
+    color: white;
+    font-size:x-large;
+    padding-left: 10px;
+    text-align: left;
+    font-weight: bold;
+}
+
+h2 {
+    font-size: large;
+    text-align: left;
+    margin: 10px auto;
+    padding-left: 10px;
+    font-weight: bold;
+}
+
+p {
+    margin-top: 10px;
+    padding-left: 10px;
+    text-align: left;
+    color: white;
+}
+
+
+/* Dropdown --------------------------------------------------------- */
+
+.dropdown {
+    margin-top: 10px;
+    width: 100%;
+}
+
+#ddLaptop {
+    width: 100%;
+}
+
+#ddMenu {
+    width: 100%;
+}
+
+
+/* Buttons --------------------------------------------------------- */
+
+.btn-success {
+    margin: 5px auto 0 auto;
+    width: 60%;
+}
+
+#work-buttons {
+    margin-top: 20px;
+    text-align: center;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+#payLoan {
+    width: 85%;
+    margin: 0 auto;
+}
+
+.btn-warning {
+    width: 40%;
+    margin-right: 5px;
+}
+
+.btn-danger {
+    width: 40%;
+    margin-left: 5px;
+}
+
+
+/* Loan Modal */
+
+.modal-content {
+    background-color: #424242;
+}
+
+.modal-content p {
+    margin: 0 auto;
+    text-align: center;
+    color: red;
+}
+
+.btn-close {
+    background-color: red;
+}
+
+.input-group {
+    width: 50%;
+    margin: 0 auto;
+}
+
+
+/* Info Area --------------------------------------------------------- */
+
+#compImg {
+    border: 4px solid #6c757d;
+    border-radius: 10px;
+    width: 100%;
+}
+
+#compTitle {
+    padding: 0px;
+    text-align: left;
+}
+
+#compBuy {
+    position: relative;
+}
+
+#compPrice {
+    text-align: center;
+    vertical-align: text-bottom;
+    padding-left: 0px;
+    font-size: x-large;
+    position: absolute;
+    top: 30%;
+    left: 50%;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+}
+
+#compBuyBtn {
+    position: absolute;
+    width: 60%;
+    top: 50%;
+    left: 50%;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+}
+
+#btnAlert {
+    background-color: transparent;
+}
+
+
+/* Content placement --------------------------------------------------------- */
+
+#functionArea {
+    display: grid;
+    grid-template-areas: "a a a";
+    grid-auto-columns: 3fr;
+    gap: 50px;
+    margin: 0 auto;
+    color: white;
+    width: 90%;
+}
+
+#infoArea {
+    display: grid;
+    grid-template-areas: "a a a";
+    grid-auto-columns: 3fr;
+    gap: 20px;
+    margin: 40px auto;
+    background-color: #424242;
+    width: 90%;
+    border-radius: 10px;
+    padding: 20px;
+}
+
+article {
+    padding: 10px;
+    background-color: #424242;
+    border-radius: 10px;
+    padding: 10px;
+}
